@@ -114,3 +114,22 @@ Public API is exported via `synalinks/api/` directory. The `./shell/api_gen.sh` 
 ## CLI and Scaffolding
 
 The `synalinks` CLI (`synalinks/cli/main.py`, click-based) provides `synalinks init` to scaffold new projects from bundled templates. Example usage patterns (RAGs, agents, SQL, MCP, training, callbacks, deployment) are in `examples/` and `guides/` at repo root — each has a `.py` file paired with a `.log` file showing expected output.
+
+## Agent Skills
+
+The official `synalinks` Agent Skill ([github.com/SynaLinks/synalinks-skills](https://github.com/SynaLinks/synalinks-skills)) teaches coding agents idiomatic Synalinks usage patterns. It covers:
+- **Core**: DataModel, Field, Input, JSON operators
+- **Programs**: Building APIs, multi-input/output graphs
+- **Modules**: Generator, ChainOfThought, SelfCritique, custom modules
+- **Agents**: FunctionCallingAgent, RLM, DeepAgent, Tool definitions, MCP integration
+- **Knowledge**: KnowledgeBase (DuckDB), RAG/KAG implementations
+- **Training**: Compilation, fitting, evaluation, callbacks
+- **Rewards & Optimizers**: ExactMatch, CosineSimilarity, LMAsJudge, RandomFewShot, OMEGA
+- **Providers**: openai, anthropic, groq, and others
+
+**Install for Claude Code / Cursor / Copilot:**
+```bash
+npx skills add SynaLinks/synalinks-skills --skill synalinks
+```
+
+This skill works across 70+ agents and will be automatically available to future Claude Code sessions in this repo.
