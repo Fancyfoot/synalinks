@@ -133,3 +133,21 @@ npx skills add SynaLinks/synalinks-skills --skill synalinks
 ```
 
 This skill works across 70+ agents and will be automatically available to future Claude Code sessions in this repo.
+
+## Project Wiki
+
+The `wiki/` directory contains a persistent, agent-maintained knowledge base documenting every subsystem, module, optimizer, reward, and design pattern in Synalinks. Built following Andrej Karpathy's "LLM Wiki" pattern, it is designed to evolve as you develop — when you discover something about the framework, update the wiki so future sessions (and agents) benefit from that understanding.
+
+**Quick links**:
+- [wiki/README.md](./wiki/README.md) — What the wiki is and how to use it
+- [wiki/index.md](./wiki/index.md) — Complete catalog of all pages
+- [wiki/schema.md](./wiki/schema.md) — Maintenance guidelines (Ingest/Query/Lint workflow)
+
+**Key pages**:
+- **Learning**: Start with [Module and Call Lifecycle](./wiki/core/module-and-call-lifecycle.md) → [Programs](./wiki/core/programs.md) → [Data Models](./wiki/core/data-model-hierarchy.md)
+- **Modules**: All ~100+ classes documented by subsystem (core, agents, training, knowledge, etc.) in [wiki/modules/](./wiki/modules/)
+- **Training**: Full training system (Trainer, Optimizers including OMEGA, 28+ Rewards, Metrics, Callbacks, Hooks) in [wiki/training/](./wiki/training/)
+- **Infrastructure**: Backend, Knowledge Bases, Sandboxes, Serialization, Datasets in [wiki/infrastructure/](./wiki/infrastructure/)
+- **Patterns**: [Two Systems of Observability](./wiki/patterns/observability-two-systems.md), [Design Decisions](./wiki/patterns/design-decisions.md)
+
+When modifying the framework, update the relevant wiki page(s) — treat it as part of the development workflow, not a separate documentation task.
