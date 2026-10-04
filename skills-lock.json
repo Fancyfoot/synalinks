@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "synalinks": {
+      "source": "SynaLinks/synalinks-skills",
+      "sourceType": "github",
+      "skillPath": "skills/synalinks/SKILL.md",
+      "computedHash": "0d53b322bfea5fe20143f5bfee084b5ec989b83517074f34d9adb9edc74bb6e7"
+    }
+  }
+}
